@@ -33,3 +33,27 @@ class Automovil extends Vehiculo {
     print('Tipo de carroceria: $tipoDeCarroceria');
   }
 }
+
+class Camion extends Vehiculo {
+  String tipoDeMotor;
+
+  Camion(String marca, String modelo, String design, int year, this.tipoDeMotor)
+      : super(marca, modelo, design, year);
+
+  void mostrarDetallesCamion() {
+    super.mostrarDetalles();
+    print('Tipo de Motor: $tipoDeMotor');
+  }
+}
+
+class Vans extends Vehiculo {
+  String tipoDeRuedas;
+
+  Vans(String marca, String modelo, String design, int year, this.tipoDeRuedas)
+      : super(marca, modelo, design, year);
+
+  void mostrarDetalleVans() {
+    super.mostrarDetalles();
+    print('Tipo de Ruedas: $tipoDeRuedas');
+  }
+}
