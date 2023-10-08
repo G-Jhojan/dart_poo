@@ -20,16 +20,42 @@
 //  print('Eres la mera verga perro!');
 //}
 //
-import '2. herencia.dart';
+//import '2. herencia.dart';
+//
+//void main() {
+//  Automovil automovil1 =
+//      Automovil('Toyota', 'Hilux', '4x4', 2023, 'La Carita de Dios');
+//  automovil1.mostrarDetallesAutomovil();
+//
+//  Camion camion1 = Camion(
+//'Chevrolet',
+//'NKR',
+//'Full Track',
+//1998,
+//'Diesel'
+//);
+//  camion1.mostrarDetallesCamion();
+//
+//  Vans vans1 = Vans('Van', 'Trooper', '4x4', 1998, 'Goma y Combustible');
+//  vans1.mostrarDetalleVans();
+//}
+//
+ import '2. herencia_animales.dart';
 
-void main() {
-  Automovil automovil1 =
-      Automovil('Toyota', 'Hilux', '4x4', 2023, 'La Carita de Dios');
-  automovil1.mostrarDetallesAutomovil();
+void main(){
+  Mamifero leon = Mamifero('Leon');
+  Ave aguila = Ave('Aguila');
 
-  Camion camion1 = Camion('Chevrolet', 'NKR', 'Full Track', 1998, 'Diesel');
-  camion1.mostrarDetallesCamion();
 
-  Vans vans1 = Vans('Van', 'Trooper', '4x4', 1998, 'Goma y Combustible');
-  vans1.mostrarDetalleVans();
-}
+  leon.emitirSonido();
+  leon.comer();
+  leon.amantar();
+
+  print('--------------------');
+
+  aguila.emitirSonido();
+  aguila.comer();
+  aguila.volar();
+
+
+ }
