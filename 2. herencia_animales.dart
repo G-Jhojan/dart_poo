@@ -21,5 +21,5 @@ class Animal {
   class Ave extends Animal{
     Ave(String nombre): super(nombre, 'Ave' );
 
-    void volar() => print('El $tipo $nombre vuela muy alto');
+    void volar() => print('El $tipo $nombre vuela muy alto ');
   }

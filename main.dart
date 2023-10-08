@@ -40,22 +40,39 @@
 //  vans1.mostrarDetalleVans();
 //}
 //
- import '2. herencia_animales.dart';
+// import '2. herencia_animales.dart';
+//
+//void main(){
+//  Mamifero leon = Mamifero('Leon');
+//  Ave aguila = Ave('Aguila');
+//
+//
+//  leon.emitirSonido();
+//  leon.comer();
+//  leon.amantar();
+//
+//  print('--------------------');
+//
+//  aguila.emitirSonido();
+//  aguila.comer();
+//  aguila.volar();
+//
+//
+// }
+//
+
+import '2. herencia_trabajadores.dart';
 
 void main(){
-  Mamifero leon = Mamifero('Leon');
-  Ave aguila = Ave('Aguila');
+Empleado empleado1 = Empleado('Juan');
+Gerente gerente1 = Gerente('Luchito');
+
+empleado1.horarioTrabajo();
+empleado1.mostrarDetallesTrabajador();
+empleado1.actualizarDatos();
+
+print('-------------------');
 
 
-  leon.emitirSonido();
-  leon.comer();
-  leon.amantar();
 
-  print('--------------------');
-
-  aguila.emitirSonido();
-  aguila.comer();
-  aguila.volar();
-
-
- }
+}
