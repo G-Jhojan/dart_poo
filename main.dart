@@ -60,29 +60,49 @@
 //
 // }
 //
+//
+//  import '2. herencia_trabajadores.dart';
+//
+//  void main(){
+//
+//    Empleado empleado1 = Empleado('Juan', 'Nocturna');
+//    Gerente gerente1 = Gerente('Luchito');
+//
+//    empleado1.horarioTrabajo();
+//    empleado1.mostrarDetallesTrabajador();
+//    empleado1.actualizarDatos();
+//
+//    print('-------------------');
+//
+//    gerente1.horarioTrabajo();
+//    gerente1.mostrarDetallesTrabajador();
+//    gerente1.actualizarDatos();
+//
+//    print('-------------------');
+//
+//  }
 
-  import '2. herencia_trabajadores.dart';
+import '2. herencia_docentes.dart';
 
-  void main(){
+void main(){
 
-    Empleado empleado1 = Empleado('Juan', 'Nocturna');
-    Gerente gerente1 = Gerente('Luchito');
+  Docente docente1 = Docente('Eduardo', 58, 'Sociología');
+  Docente docente2 = Docente('Juan', 25, 'Matemáticas');
+  Docente docente3 = Docente('Jhojan', 25, 'Informática');
 
-    empleado1.horarioTrabajo();
-    empleado1.mostrarDetallesTrabajador();
-    empleado1.actualizarDatos();
+  Rector rector1 = Rector('Leandro', 55, 'Universidad de las Américas');
+  Rector rector2 = Rector('Luis', 5, 'UNIANDES');
 
-    print('-------------------');
+  docente1.presentarse();
+  docente2.teach();
+  docente3.presentarse();
 
-    gerente1.horarioTrabajo();
-    gerente1.mostrarDetallesTrabajador();
-    gerente1.actualizarDatos();
-
-    print('-------------------');
+  print('-------------------');
 
 
+  rector1.presentarse();
+  rector2.presentarse();
 
 
 
-
-  }
+}
