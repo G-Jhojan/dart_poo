@@ -20,14 +20,14 @@ class Trabajador{
 
 class Empleado extends Trabajador{
   Empleado(
-    String nombre,
+    String nombre, seccion
   ):
   super(
     nombre,
     45,
     'vendendor',
     'ProDispro',
-    'Matutina'
+    seccion
     );
 
     void actualizarDatos() => print('El trabajador $nombre, tiene $edad años, trabaja como $puesto en la empresa $empresa, en la seccion $seccion y le gusta las mujeres de la vida galante');

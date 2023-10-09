@@ -61,18 +61,28 @@
 // }
 //
 
-import '2. herencia_trabajadores.dart';
+  import '2. herencia_trabajadores.dart';
 
-void main(){
-Empleado empleado1 = Empleado('Juan');
-Gerente gerente1 = Gerente('Luchito');
+  void main(){
 
-empleado1.horarioTrabajo();
-empleado1.mostrarDetallesTrabajador();
-empleado1.actualizarDatos();
+    Empleado empleado1 = Empleado('Juan', 'Nocturna');
+    Gerente gerente1 = Gerente('Luchito');
 
-print('-------------------');
+    empleado1.horarioTrabajo();
+    empleado1.mostrarDetallesTrabajador();
+    empleado1.actualizarDatos();
+
+    print('-------------------');
+
+    gerente1.horarioTrabajo();
+    gerente1.mostrarDetallesTrabajador();
+    gerente1.actualizarDatos();
+
+    print('-------------------');
 
 
 
-}
+
+
+
+  }
