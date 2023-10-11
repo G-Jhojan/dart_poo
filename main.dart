@@ -81,28 +81,51 @@
 //    print('-------------------');
 //
 //  }
+//
+//import '2. herencia_docentes.dart';
+//
+//void main(){
+//
+//  Docente docente1 = Docente('Eduardo', 58, 'Sociología');
+//  Docente docente2 = Docente('Juan', 25, 'Matemáticas');
+//  Docente docente3 = Docente('Jhojan', 25, 'Informática');
+//
+//  Rector rector1 = Rector('Leandro', 55, 'Universidad de las Américas');
+//  Rector rector2 = Rector('Luis', 5, 'UNIANDES');
+//
+//  docente1.presentarse();
+//  docente2.teach();
+//  docente3.presentarse();
+//
+//  print('-------------------');
+//
+//
+//  rector1.presentarse();
+//  rector2.presentarse();
+//}
+//
 
-import '2. herencia_docentes.dart';
+import '2. herencia_biblioteca.dart';
 
 void main(){
 
-  Docente docente1 = Docente('Eduardo', 58, 'Sociología');
-  Docente docente2 = Docente('Juan', 25, 'Matemáticas');
-  Docente docente3 = Docente('Jhojan', 25, 'Informática');
+  Biblioteca biblioteca = Biblioteca();
 
-  Rector rector1 = Rector('Leandro', 55, 'Universidad de las Américas');
-  Rector rector2 = Rector('Luis', 5, 'UNIANDES');
+  Libro libro1 = Libro('El Quijote', 'Miguel de Cervantes');
+  Libro libro2 = Libro('Los Quijotes', 'Jose de Cervantes');
+  Libro libro3 = Libro('La Quijote', 'María de Cervantes');
 
-  docente1.presentarse();
-  docente2.teach();
-  docente3.presentarse();
+  biblioteca.agregarLibro(libro1);
+  biblioteca.agregarLibro(libro2);
+  biblioteca.agregarLibro(libro3);
 
-  print('-------------------');
+  print('*-**-*--*-*-*-*-*-*-*-*');
 
+  biblioteca.listarLibros();
 
-  rector1.presentarse();
-  rector2.presentarse();
+  print('*-**-*--*-*-*-*-*-*-*-*');
 
-
-
+  biblioteca.buscarLibro('El Quijote');
+  biblioteca.buscarLibro('Los Quijotes');
+  biblioteca.buscarLibro('Perro Amarillo');
 }
