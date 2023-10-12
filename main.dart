@@ -101,31 +101,52 @@
 //
 //
 //  rector1.presentarse();
-//  rector2.presentarse();
+import '2. herencia_agregar_alumno.dart';
+
+////  rector2.presentarse();
+////}
+////
+//
+//import '2. herencia_biblioteca.dart';
+//
+//void main(){
+//
+//  Biblioteca biblioteca = Biblioteca();
+//
+//  Libro libro1 = Libro('El Quijote', 'Miguel de Cervantes');
+//  Libro libro2 = Libro('Los Quijotes', 'Jose de Cervantes');
+//  Libro libro3 = Libro('La Quijote', 'María de Cervantes');
+//
+//  biblioteca.agregarLibro(libro1);
+//  biblioteca.agregarLibro(libro2);
+//  biblioteca.agregarLibro(libro3);
+//
+//  print('*-**-*--*-*-*-*-*-*-*-*');
+//
+//  biblioteca.listarLibros();
+//
+//  print('*-**-*--*-*-*-*-*-*-*-*');
+//
+//  biblioteca.buscarLibro('El Quijote');
+//  biblioteca.buscarLibro('Los Quijotes');
+//  biblioteca.buscarLibro('Perro Amarillo');
 //}
 //
+ void main(){
+  RegistroEstudiante registro = RegistroEstudiante();
 
-import '2. herencia_biblioteca.dart';
+  registro.agregarEstudiantes(1001, 'Lucio');
+  registro.agregarEstudiantes(1002, 'Juan');
+  registro.agregarEstudiantes(1003, 'Patricio');
 
-void main(){
+  print('----------------------------------');
 
-  Biblioteca biblioteca = Biblioteca();
+  registro.listarEstudiantes();
 
-  Libro libro1 = Libro('El Quijote', 'Miguel de Cervantes');
-  Libro libro2 = Libro('Los Quijotes', 'Jose de Cervantes');
-  Libro libro3 = Libro('La Quijote', 'María de Cervantes');
+  print('----------------------------------');
 
-  biblioteca.agregarLibro(libro1);
-  biblioteca.agregarLibro(libro2);
-  biblioteca.agregarLibro(libro3);
+  registro.buscarEstudiante(1001);
+  registro.buscarEstudiante(1003);
 
-  print('*-**-*--*-*-*-*-*-*-*-*');
 
-  biblioteca.listarLibros();
-
-  print('*-**-*--*-*-*-*-*-*-*-*');
-
-  biblioteca.buscarLibro('El Quijote');
-  biblioteca.buscarLibro('Los Quijotes');
-  biblioteca.buscarLibro('Perro Amarillo');
-}
+ }
