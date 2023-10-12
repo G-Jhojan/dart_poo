@@ -1,3 +1,4 @@
+
 class RegistroEstudiante{
   Map<int, String> estudiantes = {};
 
@@ -23,6 +24,4 @@ class RegistroEstudiante{
       print('El estudiante con el número $numeroEstudiante no se encuentra registrado');
     }
   }
-
-
 }

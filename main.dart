@@ -102,6 +102,7 @@
 //
 //  rector1.presentarse();
 import '2. herencia_agregar_alumno.dart';
+import '2. herencia_preguntas_respuestas.dart';
 
 ////  rector2.presentarse();
 ////}
@@ -131,22 +132,47 @@ import '2. herencia_agregar_alumno.dart';
 //  biblioteca.buscarLibro('Los Quijotes');
 //  biblioteca.buscarLibro('Perro Amarillo');
 //}
+////
+ //void main(){
+ // RegistroEstudiante registro = RegistroEstudiante();//
+
+ // registro.agregarEstudiantes(1001, 'Juan');
+ // registro.agregarEstudiantes(1002, 'Juan');
+ // registro.agregarEstudiantes(1003, 'Patricio');//
+
+ // print('----------------------------------');//
+
+ // registro.listarEstudiantes();//
+
+ // print('----------------------------------');//
+
+ // registro.buscarEstudiante(1001);
+ // registro.buscarEstudiante(1003);//
 //
+
+ //}//
+
  void main(){
-  RegistroEstudiante registro = RegistroEstudiante();
+    Jugador jugador1 = Jugador('Juan');
+    Jugador jugador2 = Jugador('María');
 
-  registro.agregarEstudiantes(1001, 'Lucio');
-  registro.agregarEstudiantes(1002, 'Juan');
-  registro.agregarEstudiantes(1003, 'Patricio');
+    print('Comienza el juego!');
 
-  print('----------------------------------');
+    //simulacion del juego con respuestas correctas
 
-  registro.listarEstudiantes();
+    jugador1.responderCorrectamente();
+    jugador2.responderCorrectamente();
+    jugador1.responderCorrectamente();
 
-  print('----------------------------------');
+    print('Fin del Juego');
 
-  registro.buscarEstudiante(1001);
-  registro.buscarEstudiante(1003);
+    print('Puntuacion final: ');
+    print('${jugador1.nombre} : ${jugador1.puntuacion} puntos');
+    print('${jugador2.nombre} : ${jugador2.puntuacion} puntos');
+
+
+
+
 
 
  }
